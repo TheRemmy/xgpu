@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Pass Ultimate Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Game Pass Ultimate Calculator</h1>
+      <div class="calculator">
+        <form>
+          <label for="region">Regiune:</label>
+          <select id="region" name="region">
+            <option value="usa">USA</option>
+            <option value="turkey">Turkey</option>
+            <option value="argentina">Argentina</option>
+            <option value="europe">Europe</option>
+            <option value="global">Global</option>
+            <option value="asia">Asia</option>
+            <option value="middle-east">Middle East</option>
+          </select>
+
+          <label for="active-sub">Abonament activ:</label>
+          <select id="active-sub" name="active-sub">
+            <option value="yes">Da</option>
+            <option value="no">Nu</option>
+          </select>
+
+          <label for="new-account">Cont nou:</label>
+          <select id="new-account" name="new-account">
+            <option value="yes">Da</option>
+            <option value="no">Nu</option>
+          </select>
+
+          <label for="period">Perioadă:</label>
+          <select id="period" name="period">
+            <option value="0">Selectează o perioadă</option>
+            <option value="7">7 zile</option>
+            <option value="14">14 zile</option>
+            <option value="30">1 lună</option>
+            <option value="60">2 luni</option>
+            <option value="90">3 luni</option>
+            <option value="120">4 luni</option>
+            <option value="180">6 luni</option>
+            <option value="240">8 luni</option>
+            <option value="365">12 luni</option>
+            <option value="720">24 luni</option>
+            <option value="1080">36 luni</option>
+          </select>
+
+          <button type="button" id="calculate-button">Calculează</button>
+        </form>
+
+        <div id="calculator-result"></div>
+
+        <button type="button" id="buy-now-button" disabled>Cumpără acum</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+.calculator {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.calculator form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calculator form label {
+  flex: 1 1 auto;
+  margin-right: 10px;
+}
+
+.calculator form select {
+  flex: 1 1 auto;
+  max-width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.calculator form button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.calculator-result {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.buy-now-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buy-now-button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
